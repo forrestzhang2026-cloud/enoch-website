@@ -1,0 +1,13 @@
+# Python virtual env (only used locally to generate the QR code)
+.venv/
+
+# Backups & scratch
+*.bak
+index.html.bak
+
+# Raw source screenshot of the WeChat QR (wechat-qr.png is the one we ship)
+1784192583409.png
+
+# OS / editor junk
+.DS_Store
+Thumbs.db

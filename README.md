@@ -16,5 +16,9 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Hosted as a static site on Cloudflare Pages, custom domain `enochlogistics.com`.
-Any push to the `main` branch auto-deploys.
+Hosted on GitHub Pages from the `gh-pages` branch, custom domain `www.enochlogistics.com`
+(set in `CNAME`). Any push to `gh-pages` auto-deploys.
+
+DNS is managed at Aliyun: `www` is a CNAME to `forrestzhang2026-cloud.github.io`, and the
+apex `enochlogistics.com` has A records for GitHub Pages (185.199.108-111.153), which redirect
+to `www`. HTTPS is enforced in the repo's Pages settings.

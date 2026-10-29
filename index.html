@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ningbo Enoch Global Forwarding Co., Ltd | Global Freight & Logistics Solutions</title>
+<title>Ningbo Enoch Global Forwarding Co., Ltd | China to USA Freight Forwarder</title>
 
 <!-- ===== SEO ===== -->
-<meta name="description" content="Ningbo Enoch Global Forwarding — reliable ocean, air, and land freight forwarding and supply chain solutions connecting your business to 150+ countries." />
-<meta name="keywords" content="freight forwarding, Ningbo forwarder, ocean freight, air freight, FCL, LCL, customs brokerage, logistics, supply chain, 货代, 宁波货运代理" />
+<meta name="description" content="Ningbo-based freight forwarder focused on China to USA shipping: ocean FCL/LCL, air freight, US customs clearance, DDP door-to-door and Amazon FBA delivery." />
+<meta name="keywords" content="China to USA freight forwarder, Ningbo freight forwarder, ocean freight to USA, FCL, LCL, DDP shipping, Amazon FBA shipping, US customs clearance, 美国专线, 宁波货代, 美国双清包税" />
 <meta name="author" content="Ningbo Enoch Global Forwarding Co., Ltd" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://www.enochlogistics.com/" />
 
 <!-- ===== Open Graph / social share card ===== -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Ningbo Enoch Global Forwarding | Global Freight & Logistics" />
-<meta property="og:description" content="Reliable ocean, air, and land freight solutions connecting your business to 150+ countries." />
+<meta property="og:title" content="Ningbo Enoch Global Forwarding | China to USA Freight Forwarder" />
+<meta property="og:description" content="Ocean, air, US customs clearance and door-to-door delivery from China to the USA." />
 <meta property="og:image" content="https://www.enochlogistics.com/logo.png" />
 <meta property="og:url" content="https://www.enochlogistics.com/" />
 <meta property="og:site_name" content="Ningbo Enoch Global Forwarding" />
@@ -29,7 +29,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MovingCompany",
+  "@type": "LocalBusiness",
   "name": "Ningbo Enoch Global Forwarding Co., Ltd",
   "image": "https://www.enochlogistics.com/logo.png",
   "url": "https://www.enochlogistics.com/",
@@ -43,8 +43,8 @@
     "postalCode": "315041",
     "addressCountry": "CN"
   },
-  "areaServed": "Worldwide",
-  "description": "Global freight forwarding and integrated supply chain solutions."
+  "areaServed": ["CN", "US"],
+  "description": "Freight forwarder in Ningbo, China, focused on China to USA ocean and air freight, US customs clearance and door-to-door delivery."
 }
 </script>
 
@@ -115,7 +115,7 @@
     border-radius:10px;box-shadow:0 20px 50px rgba(10,37,64,.12);overflow:hidden}
   .stat{padding:30px 26px;text-align:center;border-right:1px solid var(--line)}
   .stat:last-child{border-right:none}
-  .stat .num{font-size:38px;font-weight:800;color:var(--navy)}
+  .stat .num{font-size:30px;font-weight:800;color:var(--navy);line-height:1.25}
   .stat .num span{color:var(--teal)}
   .stat .lbl{color:var(--muted);font-size:14px;margin-top:4px}
 
@@ -144,12 +144,24 @@
   .split .visual{background:linear-gradient(135deg,var(--navy),#10406e);border-radius:14px;min-height:380px;
     position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
   .split .visual svg{width:75%;opacity:.92}
-  .split h2{font-size:34px;color:var(--navy);font-weight:800;letter-spacing:-.3px;margin-bottom:18px}
+  .split h2{font-size:34px;line-height:1.25;color:var(--navy);font-weight:800;letter-spacing:-.3px;margin-bottom:18px}
   .split .lead{color:var(--muted);font-size:17px;margin-bottom:22px}
   .checklist{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
   .checklist li{display:flex;gap:12px;align-items:flex-start;font-size:15px}
   .checklist .tick{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(0,184,176,.15);
     color:var(--teal-dark);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;margin-top:2px}
+
+  .fact-card{background:linear-gradient(135deg,var(--navy),#10406e);border-radius:14px;padding:34px 32px;color:#fff}
+  .fact-card dl{display:flex;flex-direction:column;gap:18px}
+  .fact-card dt{color:var(--teal);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+  .fact-card dd{color:#dbe5f1;font-size:15px;margin-top:3px}
+
+  /* ===== Process steps ===== */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;list-style:none;counter-reset:step}
+  .step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 20px;counter-increment:step}
+  .step::before{content:counter(step,decimal-leading-zero);display:block;font-size:14px;font-weight:800;color:var(--teal);letter-spacing:1px;margin-bottom:8px}
+  .step h3{font-size:17px;color:var(--navy);margin-bottom:6px}
+  .step p{color:var(--muted);font-size:14px}
 
   /* ===== Industries ===== */
   .industries{background:var(--bg)}
@@ -160,7 +172,7 @@
   .ind span{display:block;font-size:13px;font-weight:600;color:var(--ink)}
 
   /* ===== Why us ===== */
-  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
   .why{text-align:left}
   .why .n{font-size:14px;font-weight:800;color:var(--teal);letter-spacing:1px}
   .why h3{font-size:20px;color:var(--navy);margin:8px 0 8px}
@@ -238,6 +250,7 @@
     .stat:nth-child(2){border-right:none}
     .svc-grid,.why-grid{grid-template-columns:1fr}
     .split{grid-template-columns:1fr;gap:30px}
+    .steps{grid-template-columns:1fr 1fr}
     .ind-grid{grid-template-columns:repeat(3,1fr)}
     .foot-top{grid-template-columns:1fr 1fr}
     .contact-grid{grid-template-columns:1fr;gap:30px}
@@ -245,6 +258,9 @@
   }
   @media(max-width:560px){
     .ind-grid{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:1fr}
+    .stat{padding:22px 12px}
+    .stat .num{font-size:24px}
     .foot-top{grid-template-columns:1fr}
     .cta-band .container{flex-direction:column;align-items:flex-start}
   }
@@ -255,9 +271,9 @@
 <!-- Top bar -->
 <div class="topbar">
   <div class="container">
-    <div data-i18n="top.location">📍 Ningbo, China · Serving 150+ countries worldwide</div>
+    <div data-i18n="top.location">📍 Ningbo, China · China to USA Logistics</div>
     <div>
-      <a href="#contact" data-i18n="top.track">Track Shipment</a>
+      <a href="#contact" data-i18n="top.quote">Get a Quote</a>
       <a href="#contact" data-i18n="top.contact">Contact</a>
       <span class="lang-switch">
         <button type="button" data-lang="en">EN</button>
@@ -274,14 +290,14 @@
       <a href="#" class="logo">
         <img src="logo.png" alt="Enoch Global Forwarding" class="logo-img" />
         <div class="logo-divider"></div>
-        <div class="logo-sub" data-i18n="brand.name">Ningbo Enoch Global
+        <div class="logo-sub"><span data-i18n="brand.name">Ningbo Enoch Global</span>
           <small data-i18n="brand.sub">FORWARDING CO., LTD</small>
         </div>
       </a>
       <div class="menu">
+        <a href="#about" data-i18n="nav.about">About Us</a>
         <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
-        <a href="#industries" data-i18n="nav.industries">Industries</a>
+        <a href="#process" data-i18n="nav.process">How It Works</a>
         <a href="#why" data-i18n="nav.why">Why Enoch</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
@@ -297,9 +313,9 @@
 <div class="overlay" id="overlay"></div>
 <div class="mobile-panel" id="mobilePanel">
   <button class="close" id="closePanel" aria-label="Close">&times;</button>
+  <a href="#about" data-i18n="nav.about">About Us</a>
   <a href="#services" data-i18n="nav.services">Services</a>
-  <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
-  <a href="#industries" data-i18n="nav.industries">Industries</a>
+  <a href="#process" data-i18n="nav.process">How It Works</a>
   <a href="#why" data-i18n="nav.why">Why Enoch</a>
   <a href="#contact" data-i18n="nav.contact">Contact</a>
   <a href="#contact" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
@@ -322,9 +338,9 @@
     <path d="M120 60 Q160 90 140 120" stroke="#00b8b0" stroke-opacity="0.7" stroke-dasharray="3 3"/>
   </svg>
   <div class="container">
-    <div class="eyebrow" data-i18n="hero.eyebrow">Global Freight Forwarding & Supply Chain</div>
-    <h1 data-i18n="hero.title">Moving Your Cargo Across the Globe, Reliably.</h1>
-    <p data-i18n="hero.desc">Ningbo Enoch Global Forwarding delivers seamless ocean, air, and land freight solutions — connecting your business to markets in over 150 countries with speed, transparency, and care.</p>
+    <div class="eyebrow" data-i18n="hero.eyebrow">China to USA Freight Forwarding</div>
+    <h1 data-i18n="hero.title">Your Shipping Partner from China to the USA.</h1>
+    <p data-i18n="hero.desc">Based in Ningbo, we handle ocean and air freight to the United States, US customs clearance, and door-to-door delivery, so your goods arrive on time with clear costs.</p>
     <div class="cta-row">
       <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Request a Quote</a>
       <a href="#services" class="btn btn-ghost" data-i18n="hero.cta2">Explore Services</a>
@@ -336,89 +352,96 @@
 <div class="stats">
   <div class="container">
     <div class="grid">
-      <div class="stat"><div class="num">150<span>+</span></div><div class="lbl" data-i18n="stat.countries">Countries Served</div></div>
-      <div class="stat"><div class="num">20<span>+</span></div><div class="lbl" data-i18n="stat.years">Years of Experience</div></div>
-      <div class="stat"><div class="num">50<span>K+</span></div><div class="lbl" data-i18n="stat.shipments">Shipments Handled</div></div>
-      <div class="stat"><div class="num">24/<span>7</span></div><div class="lbl" data-i18n="stat.support">Customer Support</div></div>
+      <div class="stat"><div class="num">CN <span>→</span> US</div><div class="lbl" data-i18n="stat.lane">Our Core Trade Lane</div></div>
+      <div class="stat"><div class="num">FCL<span> / </span>LCL</div><div class="lbl" data-i18n="stat.ocean">Ocean Freight to the USA</div></div>
+      <div class="stat"><div class="num">DDP</div><div class="lbl" data-i18n="stat.ddp">Door-to-Door, Duties Included</div></div>
+      <div class="stat"><div class="num">FBA</div><div class="lbl" data-i18n="stat.fba">Amazon Warehouse Delivery</div></div>
     </div>
   </div>
 </div>
+
+<!-- About -->
+<section class="block" id="about">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="eyebrow" style="color:var(--teal-dark);font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase" data-i18n="about.eyebrow">About Us</div>
+        <h2 data-i18n="about.title">A Ningbo Forwarder Focused on the US Trade Lane</h2>
+        <p class="lead" data-i18n="about.p1">Ningbo Enoch Global Forwarding Co., Ltd is a freight forwarder based in Ningbo, China. We specialize in cross-border logistics from China to the United States, serving importers, brands and e-commerce sellers.</p>
+        <p class="lead" data-i18n="about.p2">Our Ningbo team handles booking, cargo collection and export customs. In the US we work with long-term partner agents for customs clearance, trucking and final delivery. You deal with one team from factory to door.</p>
+        <p class="lead" data-i18n="about.p3">We work on the principles of honesty, professionalism and fast response: clear quotes, regular updates and a real person who answers your questions.</p>
+      </div>
+      <div class="fact-card">
+        <dl>
+          <div><dt data-i18n="about.f1.t">Office</dt><dd data-i18n="about.f1.d">Ningbo, Zhejiang, China</dd></div>
+          <div><dt data-i18n="about.f2.t">Core Route</dt><dd data-i18n="about.f2.d">China → USA (West Coast, East Coast and inland points)</dd></div>
+          <div><dt data-i18n="about.f3.t">Overseas Network</dt><dd data-i18n="about.f3.d">Long-term partner agents in the USA and other key markets</dd></div>
+          <div><dt data-i18n="about.f4.t">Services</dt><dd data-i18n="about.f4.d">Ocean · Air · US Customs · DDP · Amazon FBA · Trucking & Warehousing</dd></div>
+          <div><dt data-i18n="about.f5.t">Languages</dt><dd data-i18n="about.f5.d">English · Chinese</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Services -->
 <section class="block services" id="services">
   <div class="container">
     <div class="sec-head">
       <div class="eyebrow" data-i18n="svc.eyebrow">What We Do</div>
-      <h2 data-i18n="svc.title">End-to-End Logistics Services</h2>
-      <p data-i18n="svc.desc">From port to door, we manage every link in your supply chain with a single, accountable partner.</p>
+      <h2 data-i18n="svc.title">China to USA Logistics Services</h2>
+      <p data-i18n="svc.desc">Every link from the factory in China to the door in the USA, handled by one accountable team.</p>
     </div>
     <div class="svc-grid">
       <div class="svc">
         <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M2 13h20l-2 6H4l-2-6z"/><path d="M5 13V8a2 2 0 012-2h6l4 4v3"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></div>
-        <h3 data-i18n="svc.1.t">Ocean Freight</h3>
-        <p data-i18n="svc.1.d">FCL & LCL shipping with competitive rates and reliable schedules across all major trade lanes.</p>
+        <h3 data-i18n="svc.1.t">Ocean Freight to the USA</h3>
+        <p data-i18n="svc.1.d">FCL and LCL from Ningbo, Shanghai and other China ports to US West Coast, East Coast and inland points.</p>
       </div>
       <div class="svc">
         <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M2 12l9-2 5-7 2 1-2 7 6 3-1 2-7-1-3 5-2-1 1-5-7 1z"/></svg></div>
         <h3 data-i18n="svc.2.t">Air Freight</h3>
-        <p data-i18n="svc.2.d">Time-critical air cargo solutions with priority handling and global carrier partnerships.</p>
+        <p data-i18n="svc.2.d">For urgent cargo: airport-to-airport or door-to-door to major US cities, priced by time and budget.</p>
       </div>
       <div class="svc">
         <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="6" width="14" height="11" rx="1"/><path d="M15 9h4l3 3v5h-7"/><circle cx="6" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></div>
-        <h3 data-i18n="svc.3.t">Road & Trucking</h3>
-        <p data-i18n="svc.3.d">Domestic and cross-border trucking with full visibility from first mile to last mile.</p>
+        <h3 data-i18n="svc.3.t">US Customs Clearance</h3>
+        <p data-i18n="svc.3.d">ISF filing, customs entry and duty payment through licensed US brokers, with HTS code checks before shipping.</p>
       </div>
       <div class="svc">
         <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M3 21h18M9 21v-6h6v6"/></svg></div>
-        <h3 data-i18n="svc.4.t">Warehousing & Distribution</h3>
-        <p data-i18n="svc.4.d">Strategic warehousing, inventory management, and order fulfillment near key ports.</p>
+        <h3 data-i18n="svc.4.t">DDP Door-to-Door</h3>
+        <p data-i18n="svc.4.d">Duties and taxes included. We pick up in China and deliver to your US address with one all-in price.</p>
       </div>
       <div class="svc">
         <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-        <h3 data-i18n="svc.5.t">Customs Brokerage</h3>
-        <p data-i18n="svc.5.d">Expert customs clearance and trade compliance to keep your goods moving without delay.</p>
+        <h3 data-i18n="svc.5.t">Amazon FBA Delivery</h3>
+        <p data-i18n="svc.5.d">Shipping to Amazon US fulfillment centers, with carton labeling checks and delivery appointments.</p>
       </div>
       <div class="svc">
         <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-        <h3 data-i18n="svc.6.t">Supply Chain Solutions</h3>
-        <p data-i18n="svc.6.d">Tailored, data-driven logistics consulting to optimize cost, speed, and resilience.</p>
+        <h3 data-i18n="svc.6.t">US Trucking & Warehousing</h3>
+        <p data-i18n="svc.6.d">Container drayage, LTL/FTL trucking, short-term storage and transloading through our US partners.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Solutions split -->
-<section class="block" id="solutions">
+<!-- Process -->
+<section class="block" id="process">
   <div class="container">
-    <div class="split">
-      <div>
-        <div class="eyebrow" style="color:var(--teal-dark);font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase" data-i18n="sol.eyebrow">Technology + People</div>
-        <h2 data-i18n="sol.title">Visibility and Control at Every Step</h2>
-        <p class="lead" data-i18n="sol.lead">Combine our experienced logistics specialists with smart digital tools — so you always know where your cargo is and what comes next.</p>
-        <ul class="checklist">
-          <li><span class="tick">✓</span><div data-i18n-html="sol.1"><strong>Real-time tracking</strong> — monitor every shipment from booking to delivery in one place.</div></li>
-          <li><span class="tick">✓</span><div data-i18n-html="sol.2"><strong>Dedicated account team</strong> — a single point of contact who knows your business.</div></li>
-          <li><span class="tick">✓</span><div data-i18n-html="sol.3"><strong>Transparent pricing</strong> — clear, competitive quotes with no hidden surprises.</div></li>
-          <li><span class="tick">✓</span><div data-i18n-html="sol.4"><strong>Proactive exception alerts</strong> — we flag delays and act before they reach you.</div></li>
-        </ul>
-        <a href="#contact" class="btn btn-outline" data-i18n="sol.cta">Talk to an Expert</a>
-      </div>
-      <div class="visual">
-        <svg viewBox="0 0 300 240" fill="none" stroke="#00b8b0" stroke-width="1.5">
-          <rect x="30" y="40" width="240" height="160" rx="8" stroke="#3d6a9c"/>
-          <line x1="30" y1="70" x2="270" y2="70" stroke="#3d6a9c"/>
-          <circle cx="46" cy="55" r="3" fill="#00b8b0" stroke="none"/>
-          <circle cx="58" cy="55" r="3" fill="#fff" stroke="none" opacity="0.5"/>
-          <path d="M55 130 Q120 90 160 120 T250 110" stroke="#00b8b0" stroke-width="2"/>
-          <circle cx="55" cy="130" r="5" fill="#00b8b0" stroke="none"/>
-          <circle cx="160" cy="120" r="5" fill="#fff" stroke="none"/>
-          <circle cx="250" cy="110" r="5" fill="#00b8b0" stroke="none"/>
-          <rect x="50" y="155" width="60" height="28" rx="4" fill="#133a63" stroke="none"/>
-          <rect x="120" y="155" width="60" height="28" rx="4" fill="#133a63" stroke="none"/>
-          <rect x="190" y="155" width="60" height="28" rx="4" fill="#133a63" stroke="none"/>
-        </svg>
-      </div>
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="proc.eyebrow">How It Works</div>
+      <h2 data-i18n="proc.title">From Factory in China to Door in the USA</h2>
+      <p data-i18n="proc.desc">One contact person follows your shipment through every step and keeps you updated.</p>
     </div>
+    <ol class="steps">
+      <li class="step"><h3 data-i18n="proc.1.t">Quote & Booking</h3><p data-i18n="proc.1.d">Send us cargo details. We compare routes and carriers and confirm an itemized quote.</p></li>
+      <li class="step"><h3 data-i18n="proc.2.t">Pickup in China</h3><p data-i18n="proc.2.d">We collect from your supplier, check cartons and labels, and load at the port.</p></li>
+      <li class="step"><h3 data-i18n="proc.3.t">Export & Transit</h3><p data-i18n="proc.3.d">China export customs, then ocean or air transport with milestone updates.</p></li>
+      <li class="step"><h3 data-i18n="proc.4.t">US Customs</h3><p data-i18n="proc.4.d">ISF, customs entry and duties handled through licensed US brokers.</p></li>
+      <li class="step"><h3 data-i18n="proc.5.t">Final Delivery</h3><p data-i18n="proc.5.d">Trucking to your warehouse, store, Amazon FBA center or customer.</p></li>
+    </ol>
   </div>
 </section>
 
@@ -426,16 +449,16 @@
 <section class="block industries" id="industries">
   <div class="container">
     <div class="sec-head">
-      <div class="eyebrow" data-i18n="ind.eyebrow">Sectors We Serve</div>
-      <h2 data-i18n="ind.title">Industry Expertise That Moves You Forward</h2>
-      <p data-i18n="ind.desc">Specialized logistics knowledge across the industries that power global trade.</p>
+      <div class="eyebrow" data-i18n="ind.eyebrow">Cargo We Ship</div>
+      <h2 data-i18n="ind.title">Experienced with Typical China Exports</h2>
+      <p data-i18n="ind.desc">General cargo from Chinese factories to US importers and online sellers.</p>
     </div>
     <div class="ind-grid">
-      <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M7 8V5h10v3"/></svg><span data-i18n="ind.1">Retail & E-commerce</span></div>
-      <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/></svg><span data-i18n="ind.2">Manufacturing</span></div>
-      <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 000 18M3 12h18"/></svg><span data-i18n="ind.3">Automotive</span></div>
+      <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M7 8V5h10v3"/></svg><span data-i18n="ind.1">E-commerce & Retail</span></div>
+      <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/></svg><span data-i18n="ind.2">Furniture & Home</span></div>
+      <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 000 18M3 12h18"/></svg><span data-i18n="ind.3">Machinery & Parts</span></div>
       <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2v20M5 8l7-5 7 5"/><rect x="8" y="11" width="8" height="9"/></svg><span data-i18n="ind.4">Electronics</span></div>
-      <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg><span data-i18n="ind.5">Healthcare</span></div>
+      <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg><span data-i18n="ind.5">Auto Parts</span></div>
       <div class="ind"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3 6 6 .5-4.5 4 1.5 6-6-3.5-6 3.5 1.5-6L3 8.5 9 8z"/></svg><span data-i18n="ind.6">Consumer Goods</span></div>
     </div>
   </div>
@@ -446,24 +469,29 @@
   <div class="container">
     <div class="sec-head">
       <div class="eyebrow" data-i18n="why.eyebrow">Why Enoch Global</div>
-      <h2 data-i18n="why.title">A Partner You Can Build On</h2>
-      <p data-i18n="why.desc">We pair the reach of a global network with the responsiveness of a dedicated local team.</p>
+      <h2 data-i18n="why.title">Why Shippers Choose Enoch</h2>
+      <p data-i18n="why.desc">A focused team that knows one trade lane well.</p>
     </div>
     <div class="why-grid">
       <div class="why">
         <div class="n">01</div>
-        <h3 data-i18n="why.1.t">Global Network, Local Care</h3>
-        <p data-i18n="why.1.d">Agents and partners in over 150 countries, backed by a Ningbo team that treats your cargo as its own.</p>
+        <h3 data-i18n="why.1.t">Focused on the US Lane</h3>
+        <p data-i18n="why.1.d">We concentrate on China to USA shipping, so we know the carriers, US ports, customs rules and delivery options on this route.</p>
       </div>
       <div class="why">
         <div class="n">02</div>
-        <h3 data-i18n="why.2.t">Reliability You Can Measure</h3>
-        <p data-i18n="why.2.d">On-time performance, proactive communication, and accountability at every milestone of the journey.</p>
+        <h3 data-i18n="why.2.t">One Contact, Start to Finish</h3>
+        <p data-i18n="why.2.d">A dedicated person in Ningbo follows your cargo from pickup to delivery and answers in English or Chinese.</p>
       </div>
       <div class="why">
         <div class="n">03</div>
-        <h3 data-i18n="why.3.t">Solutions, Not Just Shipping</h3>
-        <p data-i18n="why.3.d">We analyze your supply chain to cut cost and lead time — acting as an extension of your team.</p>
+        <h3 data-i18n="why.3.t">Clear, Itemized Pricing</h3>
+        <p data-i18n="why.3.d">Quotes list origin, freight, US customs and delivery costs separately, so you know what you pay for.</p>
+      </div>
+      <div class="why">
+        <div class="n">04</div>
+        <h3 data-i18n="why.4.t">Reliable US Partners</h3>
+        <p data-i18n="why.4.d">Long-term partner agents in the US handle clearance, trucking and delivery, so your cargo does not get stuck after arrival.</p>
       </div>
     </div>
   </div>
@@ -473,8 +501,8 @@
 <section class="cta-band">
   <div class="container">
     <div>
-      <h2 data-i18n="cta.title">Ready to streamline your supply chain?</h2>
-      <p data-i18n="cta.desc">Get a tailored quote from our freight specialists within 24 hours.</p>
+      <h2 data-i18n="cta.title">Shipping from China to the USA?</h2>
+      <p data-i18n="cta.desc">Send us your cargo details and get an itemized quote within one business day.</p>
     </div>
     <a href="#contact" class="btn btn-primary" data-i18n="cta.btn">Request a Quote</a>
   </div>
@@ -486,7 +514,7 @@
     <div class="sec-head">
       <div class="eyebrow" data-i18n="contact.eyebrow">Get in Touch</div>
       <h2 data-i18n="contact.title">Request a Quote</h2>
-      <p data-i18n="contact.desc">Tell us about your shipment and our team will get back to you within one business day.</p>
+      <p data-i18n="contact.desc">Tell us about your shipment to the USA and our team will get back to you within one business day.</p>
     </div>
     <div class="contact-grid">
       <div class="contact-info">
@@ -538,17 +566,18 @@
         <div class="fld">
           <label data-i18n="form.service">Service Needed</label>
           <select name="service">
-            <option data-i18n="form.opt.ocean">Ocean Freight</option>
+            <option data-i18n="form.opt.ocean">Ocean Freight (FCL / LCL)</option>
             <option data-i18n="form.opt.air">Air Freight</option>
-            <option data-i18n="form.opt.road">Road & Trucking</option>
-            <option data-i18n="form.opt.customs">Customs Brokerage</option>
-            <option data-i18n="form.opt.warehouse">Warehousing</option>
+            <option data-i18n="form.opt.road">DDP Door-to-Door</option>
+            <option data-i18n="form.opt.customs">US Customs Clearance</option>
+            <option data-i18n="form.opt.warehouse">Amazon FBA Delivery</option>
+            <option data-i18n="form.opt.truck">US Trucking & Warehousing</option>
             <option data-i18n="form.opt.other">Other</option>
           </select>
         </div>
         <div class="fld">
           <label data-i18n="form.msg">Shipment Details</label>
-          <textarea name="message" placeholder="Origin, destination, cargo, volume/weight, timing…"></textarea>
+          <textarea name="message" placeholder="Pickup city in China, US delivery address or port, cargo, cartons / CBM / weight, ready date…"></textarea>
         </div>
         <button type="submit" class="btn btn-primary" data-i18n="form.submit">Send Request</button>
         <div class="form-note" data-i18n="form.note">We reply within 1 business day. Your information stays confidential.</div>
@@ -564,24 +593,24 @@
     <div class="foot-top">
       <div class="foot-brand">
         <span class="logo-chip"><img src="logo.png" alt="Enoch Global Forwarding" /></span>
-        <p data-i18n="foot.about">Your trusted partner for global freight forwarding and integrated supply chain solutions, headquartered in Ningbo, China.</p>
+        <p data-i18n="foot.about">A Ningbo-based freight forwarder focused on China to USA ocean, air and door-to-door logistics.</p>
       </div>
       <div>
         <h4 data-i18n="foot.services">Services</h4>
         <ul>
-          <li><a href="#services" data-i18n="svc.1.t">Ocean Freight</a></li>
+          <li><a href="#services" data-i18n="svc.1.t">Ocean Freight to the USA</a></li>
           <li><a href="#services" data-i18n="svc.2.t">Air Freight</a></li>
-          <li><a href="#services" data-i18n="svc.3.t">Road & Trucking</a></li>
-          <li><a href="#services" data-i18n="svc.5.t">Customs Brokerage</a></li>
-          <li><a href="#services" data-i18n="svc.4.t">Warehousing</a></li>
+          <li><a href="#services" data-i18n="svc.3.t">US Customs Clearance</a></li>
+          <li><a href="#services" data-i18n="svc.4.t">DDP Door-to-Door</a></li>
+          <li><a href="#services" data-i18n="svc.5.t">Amazon FBA Delivery</a></li>
         </ul>
       </div>
       <div>
         <h4 data-i18n="foot.company">Company</h4>
         <ul>
-          <li><a href="#why" data-i18n="foot.aboutus">About Us</a></li>
-          <li><a href="#industries" data-i18n="nav.industries">Industries</a></li>
-          <li><a href="#solutions" data-i18n="foot.tech">Technology</a></li>
+          <li><a href="#about" data-i18n="foot.aboutus">About Us</a></li>
+          <li><a href="#industries" data-i18n="foot.cargo">Cargo We Ship</a></li>
+          <li><a href="#process" data-i18n="foot.tech">How It Works</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
@@ -609,44 +638,53 @@
 const I18N = {
   en: {},  /* English = the text already in HTML, so en is left empty and we snapshot it on load */
   zh: {
-    "top.location":"📍 中国宁波 · 服务全球 150+ 国家和地区",
-    "top.track":"货物追踪", "top.contact":"联系我们",
+    "top.location":"📍 中国宁波 · 专注中国至美国物流",
+    "top.quote":"获取报价", "top.contact":"联系我们",
     "brand.name":"宁波坤马国际", "brand.sub":"货运代理有限公司",
-    "nav.services":"服务", "nav.solutions":"解决方案", "nav.industries":"行业", "nav.why":"为何选择坤马", "nav.contact":"联系", "nav.quote":"获取报价",
-    "hero.eyebrow":"全球货运代理与供应链",
-    "hero.title":"跨越全球，稳妥送达您的货物。",
-    "hero.desc":"宁波坤马国际货运代理提供一体化的海运、空运、陆运解决方案——以速度、透明和用心，连接您的业务与 150 多个国家的市场。",
+    "nav.about":"关于我们", "nav.services":"服务", "nav.process":"服务流程", "nav.why":"为何选择坤马", "nav.contact":"联系", "nav.quote":"获取报价",
+    "hero.eyebrow":"中国至美国货运代理",
+    "hero.title":"您从中国到美国的物流伙伴。",
+    "hero.desc":"我们立足宁波，提供中国至美国的海运、空运、美国清关和门到门派送服务，让您的货物准时到达，费用清清楚楚。",
     "hero.cta1":"获取报价", "hero.cta2":"了解服务",
-    "stat.countries":"服务国家", "stat.years":"行业经验", "stat.shipments":"承运票数", "stat.support":"客户支持",
-    "svc.eyebrow":"我们的业务", "svc.title":"端到端物流服务", "svc.desc":"从港口到门店，我们以单一、负责的合作伙伴身份，管理您供应链的每一个环节。",
-    "svc.1.t":"海运", "svc.1.d":"整箱(FCL)与拼箱(LCL)运输，覆盖各主要贸易航线，价格有竞争力、船期可靠。",
-    "svc.2.t":"空运", "svc.2.d":"时效敏感的航空货运方案，优先处理，全球承运人合作网络。",
-    "svc.3.t":"陆运与卡车", "svc.3.d":"国内及跨境卡车运输，从首公里到最后一公里全程可视。",
-    "svc.4.t":"仓储与配送", "svc.4.d":"临近核心港口的战略性仓储、库存管理与订单履约。",
-    "svc.5.t":"报关清关", "svc.5.d":"专业的清关与贸易合规服务，让您的货物畅通无阻。",
-    "svc.6.t":"供应链方案", "svc.6.d":"量身定制、数据驱动的物流咨询，优化成本、速度与韧性。",
-    "sol.eyebrow":"技术 + 团队", "sol.title":"全程可视，尽在掌握",
-    "sol.lead":"将我们经验丰富的物流专家与智能数字工具结合——让您随时知道货在哪里、下一步会发生什么。",
-    "sol.1":"<strong>实时追踪</strong> —— 从订舱到交付，在一处监控每一票货物。",
-    "sol.2":"<strong>专属客户团队</strong> —— 一个了解您业务的固定对接人。",
-    "sol.3":"<strong>价格透明</strong> —— 清晰、有竞争力的报价，无隐藏费用。",
-    "sol.4":"<strong>主动异常预警</strong> —— 我们提前发现延误并在影响您之前处理。",
-    "sol.cta":"咨询专家",
-    "ind.eyebrow":"我们服务的行业", "ind.title":"助您前行的行业专长", "ind.desc":"在驱动全球贸易的各个行业中，拥有专业的物流知识。",
-    "ind.1":"零售与电商", "ind.2":"制造业", "ind.3":"汽车", "ind.4":"电子", "ind.5":"医疗健康", "ind.6":"消费品",
-    "why.eyebrow":"为何选择坤马国际", "why.title":"值得信赖、可以依托的伙伴", "why.desc":"我们将全球网络的覆盖力，与专属本地团队的响应速度合二为一。",
-    "why.1.t":"全球网络，本地用心", "why.1.d":"在 150 多个国家拥有代理与合作伙伴，背后是把您的货当作自己货的宁波团队。",
-    "why.2.t":"可衡量的可靠", "why.2.d":"准时表现、主动沟通，在每一个节点上负责到底。",
-    "why.3.t":"提供方案，而非只是运输", "why.3.d":"我们分析您的供应链以降低成本与时效——成为您团队的延伸。",
-    "cta.title":"准备好优化您的供应链了吗？", "cta.desc":"24 小时内获取我们货运专家为您定制的报价。", "cta.btn":"获取报价",
-    "contact.eyebrow":"联系我们", "contact.title":"获取报价", "contact.desc":"告诉我们您的运输需求，我们的团队将在一个工作日内回复您。",
+    "stat.lane":"核心航线", "stat.ocean":"美国海运整柜/拼箱", "stat.ddp":"双清包税，门到门", "stat.fba":"亚马逊仓派送",
+    "about.eyebrow":"关于我们", "about.title":"专注美国航线的宁波货代",
+    "about.p1":"宁波坤马国际货运代理有限公司是一家总部位于中国宁波的货运代理公司，专注中国至美国的跨境物流，服务对象包括进口商、品牌商和跨境电商卖家。",
+    "about.p2":"宁波团队负责订舱、提货和出口报关；在美国，我们与长期合作的代理一起完成清关、卡车运输和末端派送。从工厂到收货地址，您只需对接我们一个团队。",
+    "about.p3":"我们坚持诚信、专业、快速响应：报价清楚，进度及时通报，有问题随时有人回复。",
+    "about.f1.t":"办公地点", "about.f1.d":"中国浙江宁波",
+    "about.f2.t":"核心航线", "about.f2.d":"中国 → 美国（美西、美东及内陆点）",
+    "about.f3.t":"海外网络", "about.f3.d":"美国及其他主要市场的长期合作代理",
+    "about.f4.t":"服务项目", "about.f4.d":"海运 · 空运 · 美国清关 · 双清包税 · 亚马逊FBA · 卡车与仓储",
+    "about.f5.t":"服务语言", "about.f5.d":"中文 · 英文",
+    "svc.eyebrow":"我们的业务", "svc.title":"中国至美国物流服务", "svc.desc":"从中国工厂到美国收货地址，每个环节由同一个团队负责到底。",
+    "svc.1.t":"美国海运", "svc.1.d":"整柜(FCL)和拼箱(LCL)，从宁波、上海等中国港口发往美西、美东及内陆点。",
+    "svc.2.t":"空运", "svc.2.d":"适合急货：机场到机场或门到门，覆盖美国主要城市，按时效和预算选择方案。",
+    "svc.3.t":"美国清关", "svc.3.d":"通过美国持牌报关行办理 ISF 申报、进口清关和关税缴纳，出货前帮您核对 HTS 编码。",
+    "svc.4.t":"双清包税门到门", "svc.4.d":"含关税和税费。我们在中国提货，送到您在美国的地址，一口价全包。",
+    "svc.5.t":"亚马逊 FBA 派送", "svc.5.d":"派送至美国亚马逊仓，协助检查箱唛标签并预约送仓。",
+    "svc.6.t":"美国卡车与仓储", "svc.6.d":"通过美国合作伙伴提供拖柜、零担/整车运输、短期仓储和转运换标。",
+    "proc.eyebrow":"服务流程", "proc.title":"从中国工厂到美国收货地址", "proc.desc":"一位专属对接人全程跟进您的货物，及时通报进度。",
+    "proc.1.t":"询价与订舱", "proc.1.d":"发来货物信息，我们比较线路和船司/航司，确认分项报价。",
+    "proc.2.t":"国内提货", "proc.2.d":"到供应商处提货，检查箱子和标签，送港装柜。",
+    "proc.3.t":"出口与运输", "proc.3.d":"中国出口报关，海运或空运发出，关键节点及时更新。",
+    "proc.4.t":"美国清关", "proc.4.d":"通过美国持牌报关行办理 ISF、进口清关和关税。",
+    "proc.5.t":"末端派送", "proc.5.d":"卡车派送到您的仓库、门店、亚马逊仓或终端客户。",
+    "ind.eyebrow":"常运货物", "ind.title":"熟悉中国主要出口货类", "ind.desc":"从中国工厂发往美国进口商和电商卖家的普通货物。",
+    "ind.1":"跨境电商与零售", "ind.2":"家具家居", "ind.3":"机械及配件", "ind.4":"电子产品", "ind.5":"汽车配件", "ind.6":"日用消费品",
+    "why.eyebrow":"为何选择坤马国际", "why.title":"客户为什么选择坤马", "why.desc":"一个专注、熟悉美国航线的团队。",
+    "why.1.t":"专注美国航线", "why.1.d":"我们集中做中国到美国的运输，熟悉这条线上的船司、美国港口、清关规定和派送方式。",
+    "why.2.t":"一人对接，全程负责", "why.2.d":"宁波的专属对接人从提货跟到派送，中英文都能沟通。",
+    "why.3.t":"分项报价，价格透明", "why.3.d":"报价分开列明国内、运费、美国清关和派送费用，每一笔都清楚。",
+    "why.4.t":"可靠的美国合作伙伴", "why.4.d":"美国长期合作代理负责清关、拖车和派送，货到港后不会卡住。",
+    "cta.title":"要从中国发货到美国？", "cta.desc":"发来货物信息，一个工作日内给您分项报价。", "cta.btn":"获取报价",
+    "contact.eyebrow":"联系我们", "contact.title":"获取报价", "contact.desc":"告诉我们您发往美国的货物情况，我们的团队将在一个工作日内回复您。",
     "contact.reach":"联系方式", "contact.addr":"地址", "contact.addrv":"中国宁波市鄞州区和济街68号城投大厦6-1-2室 · 邮编 315041",
     "contact.phone":"电话 / WhatsApp", "contact.email":"邮箱", "contact.wechat":"微信", "contact.wechatv":"扫码添加我们为好友",
     "form.name":"姓名", "form.company":"公司", "form.email":"邮箱", "form.phone":"电话", "form.service":"所需服务",
-    "form.opt.ocean":"海运", "form.opt.air":"空运", "form.opt.road":"陆运与卡车", "form.opt.customs":"报关清关", "form.opt.warehouse":"仓储", "form.opt.other":"其他",
+    "form.opt.ocean":"海运（整柜/拼箱）", "form.opt.air":"空运", "form.opt.road":"双清包税门到门", "form.opt.customs":"美国清关", "form.opt.warehouse":"亚马逊 FBA 派送", "form.opt.truck":"美国卡车与仓储", "form.opt.other":"其他",
     "form.msg":"货物详情", "form.submit":"发送需求", "form.note":"我们将在一个工作日内回复，您的信息将严格保密。",
-    "foot.about":"值得信赖的全球货运代理与一体化供应链解决方案伙伴，总部位于中国宁波。",
-    "foot.services":"服务", "foot.company":"公司", "foot.aboutus":"关于我们", "foot.tech":"技术", "foot.touch":"联系我们",
+    "foot.about":"总部位于宁波的货运代理，专注中国至美国的海运、空运和门到门物流。",
+    "foot.services":"服务", "foot.company":"公司", "foot.aboutus":"关于我们", "foot.cargo":"常运货物", "foot.tech":"服务流程", "foot.touch":"联系我们",
     "foot.copy":"© 2026 宁波坤马国际货运代理有限公司 版权所有", "foot.privacy":"隐私政策", "foot.terms":"服务条款"
   }
 };

@@ -129,12 +129,12 @@
 
   /* ===== Services ===== */
   .services{background:var(--bg)}
-  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
   .svc{background:#fff;border:1px solid var(--line);border-radius:10px;padding:32px 28px;transition:.2s}
   .svc:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(10,37,64,.10);border-color:transparent}
-  .svc .ico{width:54px;height:54px;border-radius:10px;background:rgba(0,184,176,.12);
+  .svc .ico{width:84px;height:84px;border-radius:12px;background:var(--navy);
     display:flex;align-items:center;justify-content:center;margin-bottom:18px}
-  .svc .ico svg{width:28px;height:28px;stroke:var(--teal-dark)}
+  .svc .ico img{width:64px;height:64px}
   .svc h3{font-size:19px;color:var(--navy);margin-bottom:8px}
   .svc p{color:var(--muted);font-size:15px}
   .svc .more{display:inline-block;margin-top:14px;color:var(--teal-dark);font-weight:600;font-size:14px}
@@ -250,7 +250,8 @@
     .hero h1{font-size:38px}
     .stats .grid{grid-template-columns:repeat(2,1fr)}
     .stat:nth-child(2){border-right:none}
-    .svc-grid,.why-grid{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:1fr}
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
     .split{grid-template-columns:1fr;gap:30px}
     .steps{grid-template-columns:1fr 1fr}
     .ind-grid{grid-template-columns:repeat(3,1fr)}
@@ -260,6 +261,7 @@
   }
   @media(max-width:560px){
     .ind-grid{grid-template-columns:repeat(2,1fr)}
+    .svc-grid{grid-template-columns:1fr}
     .steps{grid-template-columns:1fr}
     .stat{padding:22px 12px}
     .stat .num{font-size:24px}
@@ -392,39 +394,49 @@
   <div class="container">
     <div class="sec-head">
       <div class="eyebrow" data-i18n="svc.eyebrow">What We Do</div>
-      <h2 data-i18n="svc.title">China to USA Logistics Services</h2>
+      <h2 data-i18n="svc.title">Our Portfolio of Services</h2>
       <p data-i18n="svc.desc">Every link from the factory in China or Southeast Asia to the door in the USA, handled by one accountable team.</p>
     </div>
     <div class="svc-grid">
       <div class="svc">
-        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M2 13h20l-2 6H4l-2-6z"/><path d="M5 13V8a2 2 0 012-2h6l4 4v3"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></div>
-        <h3 data-i18n="svc.1.t">Ocean Freight to the USA</h3>
-        <p data-i18n="svc.1.d">FCL and LCL from Ningbo, Shanghai, Shenzhen, Qingdao, Vietnam, Thailand, Malaysia and Cambodia to US West Coast, East Coast and inland points.</p>
+        <div class="ico"><img src="img/services/ocean.png" alt="" width="80" height="80" loading="lazy" /></div>
+        <h3 data-i18n="svc.1.t">Ocean Freight</h3>
+        <p data-i18n="svc.1.d">Trans-Pacific eastbound from Asia to the US. FCL and LCL from Ningbo, Shanghai, Shenzhen, Qingdao and Southeast Asia to US West Coast, East Coast and inland points.</p>
       </div>
       <div class="svc">
-        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M2 12l9-2 5-7 2 1-2 7 6 3-1 2-7-1-3 5-2-1 1-5-7 1z"/></svg></div>
+        <div class="ico"><img src="img/services/air.png" alt="" width="80" height="80" loading="lazy" /></div>
         <h3 data-i18n="svc.2.t">Air Freight</h3>
-        <p data-i18n="svc.2.d">For urgent cargo: airport-to-airport or door-to-door to major US cities, priced by time and budget.</p>
+        <p data-i18n="svc.2.d">For your most time-sensitive cargo. Departures from major air gateways including Shanghai and Hong Kong, airport-to-airport or door-to-door.</p>
       </div>
       <div class="svc">
-        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="6" width="14" height="11" rx="1"/><path d="M15 9h4l3 3v5h-7"/><circle cx="6" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></div>
-        <h3 data-i18n="svc.3.t">US Customs Clearance</h3>
-        <p data-i18n="svc.3.d">ISF filing, customs entry and duty payment through licensed US brokers, with HTS code checks before shipping.</p>
+        <div class="ico"><img src="img/services/truck.png" alt="" width="80" height="80" loading="lazy" /></div>
+        <h3 data-i18n="svc.3.t">Trucking & Delivery</h3>
+        <p data-i18n="svc.3.d">Truckload network in China and the US, from single loads to dedicated trucks, with first-mile pickup, last-mile delivery and Amazon FBA delivery.</p>
       </div>
       <div class="svc">
-        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M3 21h18M9 21v-6h6v6"/></svg></div>
-        <h3 data-i18n="svc.4.t">DDP Door-to-Door</h3>
-        <p data-i18n="svc.4.d">Duties and taxes included. We pick up in China and deliver to your US address with one all-in price.</p>
+        <div class="ico"><img src="img/services/contract.png" alt="" width="80" height="80" loading="lazy" /></div>
+        <h3 data-i18n="svc.4.t">Contract Logistics</h3>
+        <p data-i18n="svc.4.d">Warehousing, consolidation and cross-docking. We manage storage, labeling and transloading to keep your supply chain running and costs down.</p>
       </div>
       <div class="svc">
-        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-        <h3 data-i18n="svc.5.t">Amazon FBA Delivery</h3>
-        <p data-i18n="svc.5.d">Shipping to Amazon US fulfillment centers, with carton labeling checks and delivery appointments.</p>
+        <div class="ico"><img src="img/services/project.png" alt="" width="80" height="80" loading="lazy" /></div>
+        <h3 data-i18n="svc.5.t">Project Logistics</h3>
+        <p data-i18n="svc.5.d">Oversized, heavy and equipment shipments for capital projects, planned and handled from start to finish.</p>
       </div>
       <div class="svc">
-        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-        <h3 data-i18n="svc.6.t">US Trucking & Warehousing</h3>
-        <p data-i18n="svc.6.d">Container drayage, LTL/FTL trucking, short-term storage and transloading through our US partners.</p>
+        <div class="ico"><img src="img/services/customs.png" alt="" width="80" height="80" loading="lazy" /></div>
+        <h3 data-i18n="svc.6.t">Customs Brokerage</h3>
+        <p data-i18n="svc.6.d">Export declaration and inspection in China. In the US, ISF filing, customs entry and duty payment through licensed brokers, with DAP / DDP options.</p>
+      </div>
+      <div class="svc">
+        <div class="ico"><img src="img/services/managed.png" alt="" width="80" height="80" loading="lazy" /></div>
+        <h3 data-i18n="svc.7.t">Managed Services</h3>
+        <p data-i18n="svc.7.d">One point of contact for your whole supply chain: shipment tracking, cargo insurance, routing advice and trade consulting.</p>
+      </div>
+      <div class="svc">
+        <div class="ico"><img src="img/services/rail.png" alt="" width="80" height="80" loading="lazy" /></div>
+        <h3 data-i18n="svc.8.t">Railway Service</h3>
+        <p data-i18n="svc.8.d">A faster alternative to ocean and cheaper than air: direct rail links from China to major cities in Europe.</p>
       </div>
     </div>
   </div>
@@ -602,11 +614,11 @@
       <div>
         <h4 data-i18n="foot.services">Services</h4>
         <ul>
-          <li><a href="#services" data-i18n="svc.1.t">Ocean Freight to the USA</a></li>
+          <li><a href="#services" data-i18n="svc.1.t">Ocean Freight</a></li>
           <li><a href="#services" data-i18n="svc.2.t">Air Freight</a></li>
-          <li><a href="#services" data-i18n="svc.3.t">US Customs Clearance</a></li>
-          <li><a href="#services" data-i18n="svc.4.t">DDP Door-to-Door</a></li>
-          <li><a href="#services" data-i18n="svc.5.t">Amazon FBA Delivery</a></li>
+          <li><a href="#services" data-i18n="svc.3.t">Trucking & Delivery</a></li>
+          <li><a href="#services" data-i18n="svc.6.t">Customs Brokerage</a></li>
+          <li><a href="#services" data-i18n="svc.4.t">Contract Logistics</a></li>
         </ul>
       </div>
       <div>
@@ -660,13 +672,15 @@ const I18N = {
     "about.f6.t":"合作船公司", "about.f6.d":"达飞 CMA CGM、中远海运 COSCO、长荣 Evergreen 等",
     "about.f4.t":"起运地", "about.f4.d":"中国：宁波、上海、深圳、青岛 · 东南亚：越南、泰国、马来西亚、柬埔寨",
     "about.f5.t":"目的地", "about.f5.d":"美国：美西、美东及内陆点",
-    "svc.eyebrow":"我们的业务", "svc.title":"中国至美国物流服务", "svc.desc":"从中国或东南亚工厂到美国收货地址，每个环节由同一个团队负责到底。",
-    "svc.1.t":"美国海运", "svc.1.d":"整柜(FCL)和拼箱(LCL)，从宁波、上海、深圳、青岛及越南、泰国、马来西亚、柬埔寨发往美西、美东及内陆点。",
-    "svc.2.t":"空运", "svc.2.d":"适合急货：机场到机场或门到门，覆盖美国主要城市，按时效和预算选择方案。",
-    "svc.3.t":"美国清关", "svc.3.d":"通过美国持牌报关行办理 ISF 申报、进口清关和关税缴纳，出货前帮您核对 HTS 编码。",
-    "svc.4.t":"双清包税门到门", "svc.4.d":"含关税和税费。我们在中国提货，送到您在美国的地址，一口价全包。",
-    "svc.5.t":"亚马逊 FBA 派送", "svc.5.d":"派送至美国亚马逊仓，协助检查箱唛标签并预约送仓。",
-    "svc.6.t":"美国卡车与仓储", "svc.6.d":"通过美国合作伙伴提供拖柜、零担/整车运输、短期仓储和转运换标。",
+    "svc.eyebrow":"我们的业务", "svc.title":"我们的服务", "svc.desc":"从中国或东南亚工厂到美国收货地址，每个环节由同一个团队负责到底。",
+    "svc.1.t":"海运", "svc.1.d":"专注跨太平洋东向航线（亚洲至美国）。整柜(FCL)和拼箱(LCL)，从宁波、上海、深圳、青岛及东南亚发往美西、美东及内陆点。",
+    "svc.2.t":"空运", "svc.2.d":"适合时效要求最高的货物。从上海、香港等主要空港出发，可做机场到机场或门到门。",
+    "svc.3.t":"卡车运输与派送", "svc.3.d":"中美两端的卡车运输网络，从单票到专车都能安排，覆盖头程提货、尾程派送和亚马逊 FBA 送仓。",
+    "svc.4.t":"合同物流", "svc.4.d":"仓储、集拼和越库操作。我们负责存储、贴标和转运，让供应链顺畅运转、降低成本。",
+    "svc.5.t":"项目物流", "svc.5.d":"为设备和大型项目提供超大、超重货物运输，从方案规划到执行全程负责。",
+    "svc.6.t":"报关清关", "svc.6.d":"国内出口报关和商检；在美国通过持牌报关行办理 ISF 申报、进口清关和关税缴纳，可选 DAP / DDP 条款。",
+    "svc.7.t":"供应链管理", "svc.7.d":"整条供应链只对接一个团队：货物跟踪、货运保险、路线方案和国际贸易咨询。",
+    "svc.8.t":"铁路运输", "svc.8.d":"比海运快、比空运省：从中国直达欧洲主要城市的铁路班列。",
     "proc.eyebrow":"服务流程", "proc.title":"从工厂到美国收货地址", "proc.desc":"一位专属对接人全程跟进您的货物，及时通报进度。",
     "proc.1.t":"询价与订舱", "proc.1.d":"发来货物信息，我们比较线路和船司/航司，确认分项报价。",
     "proc.2.t":"起运地提货", "proc.2.d":"到您在中国或东南亚的供应商处提货，检查箱子和标签，送港装柜。",

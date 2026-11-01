@@ -226,6 +226,7 @@
   .form-status{font-size:14px;margin-top:14px;text-align:center;font-weight:600;display:none}
   .form-status.ok{display:block;color:var(--teal-dark)}
   .form-status.err{display:block;color:#c0392b}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 
   /* ===== Mobile menu panel ===== */
   .mobile-panel{display:none;position:fixed;inset:0 0 0 auto;width:min(320px,80vw);background:#fff;z-index:200;
@@ -368,15 +369,16 @@
       <div>
         <div class="eyebrow" style="color:var(--teal-dark);font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase" data-i18n="about.eyebrow">About Us</div>
         <h2 data-i18n="about.title">A Ningbo Forwarder Focused on the US Trade Lane</h2>
-        <p class="lead" data-i18n="about.p1">Ningbo Enoch Global Forwarding Co., Ltd was founded in 2021 in Ningbo, China. We are an NVOCC registered with the US Federal Maritime Commission (FMC), specializing in cross-border logistics to the United States for importers, brands and e-commerce sellers. Our team brings 20 years of experience on the China–US trade lane.</p>
-        <p class="lead" data-i18n="about.p2">Our Ningbo team handles booking, cargo collection and export customs in China, and works with partner agents for shipments from Southeast Asia. In the US, long-term partner agents handle customs clearance, trucking and final delivery. You deal with one team from factory to door.</p>
+        <p class="lead" data-i18n="about.p1">Ningbo Enoch Global Forwarding Co., Ltd was founded in 2021 in Ningbo, home to the world's busiest cargo port. We are an NVOCC approved by China's Ministry of Transport and registered with the US Federal Maritime Commission (FMC), specializing in ocean and air freight to the United States for importers, brands and e-commerce sellers. Our team brings 20 years of experience on the China–US trade lane.</p>
+        <p class="lead" data-i18n="about.p2">Our Ningbo team handles quoting, booking, cargo pickup, warehousing, export customs, inspection and cargo insurance, and works with partner agents for shipments from Southeast Asia. We work long-term with carriers including CMA CGM, COSCO and Evergreen. In the US, long-term partner agents handle customs clearance, trucking and DAP / DDP delivery. You deal with one team from factory to door.</p>
         <p class="lead" data-i18n="about.p3">We work on the principles of honesty, professionalism and fast response: clear quotes, regular updates and a real person who answers your questions.</p>
       </div>
       <div class="fact-card">
         <dl>
           <div><dt data-i18n="about.f1.t">Office</dt><dd data-i18n="about.f1.d">Ningbo, Zhejiang, China</dd></div>
           <div><dt data-i18n="about.f2.t">Founded</dt><dd data-i18n="about.f2.d">2021 · Team with 20 years on the China–US lane</dd></div>
-          <div><dt data-i18n="about.f3.t">Credentials</dt><dd data-i18n="about.f3.d">NVOCC · FMC registered</dd></div>
+          <div><dt data-i18n="about.f3.t">Credentials</dt><dd data-i18n="about.f3.d">NVOCC (China MOT approved) · FMC registered</dd></div>
+          <div><dt data-i18n="about.f6.t">Carriers</dt><dd data-i18n="about.f6.d">CMA CGM, COSCO, Evergreen and others</dd></div>
           <div><dt data-i18n="about.f4.t">Origins</dt><dd data-i18n="about.f4.d">China: Ningbo, Shanghai, Shenzhen, Qingdao · Southeast Asia: Vietnam, Thailand, Malaysia, Cambodia</dd></div>
           <div><dt data-i18n="about.f5.t">Destination</dt><dd data-i18n="about.f5.d">USA: West Coast, East Coast and inland points</dd></div>
         </dl>
@@ -540,9 +542,10 @@
         </div>
       </div>
 
-      <!-- Submits via the visitor's own email client (mailto). No backend needed.
-           To later switch to a hosted form service, set an action URL and restore an AJAX handler. -->
+      <!-- Sends via Web3Forms (set WEB3FORMS_KEY in the script below).
+           Falls back to the visitor's email client (mailto) if no key is set or the request fails. -->
       <form class="quote" id="quoteForm">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
         <div class="two">
           <div class="fld">
@@ -648,12 +651,13 @@ const I18N = {
     "hero.desc":"我们立足宁波，承运中国及东南亚发往美国的货物，提供海运、空运、美国清关和门到门派送，让货物准时到达，费用清清楚楚。",
     "hero.cta1":"获取报价", "hero.cta2":"了解服务", "stat.exp":"团队深耕中美航线年数", "stat.nvocc":"FMC 备案", "stat.origin":"中国及东南亚起运", "stat.ddp":"双清包税门到门 / 亚马逊派送",
     "about.eyebrow":"关于我们", "about.title":"专注美国航线的宁波货代",
-    "about.p1":"宁波坤马国际货运代理有限公司成立于 2021 年，总部位于中国宁波，是在美国联邦海事委员会（FMC）备案的 NVOCC（无船承运人），专注发往美国的跨境物流，服务进口商、品牌商和跨境电商卖家。团队在中美航线上拥有 20 年的专业经验。",
-    "about.p2":"宁波团队负责国内订舱、提货和出口报关；东南亚起运的货物由我们与当地合作代理一起操作。在美国，长期合作的代理负责清关、卡车运输和末端派送。从工厂到收货地址，您只需对接我们一个团队。",
+    "about.p1":"宁波坤马国际货运代理有限公司成立于 2021 年，总部位于全球货物吞吐量第一的宁波港所在地。公司是经中国交通运输部批准、并在美国联邦海事委员会（FMC）备案的 NVOCC（无船承运人），专注发往美国的海运和空运，服务进口商、品牌商和跨境电商卖家。团队在中美航线上拥有 20 年的专业经验。",
+    "about.p2":"宁波团队负责询价、订舱、提货、仓储、出口报关、商检和货物保险；东南亚起运的货物由我们与当地合作代理一起操作。我们与达飞（CMA CGM）、中远海运（COSCO）、长荣（Evergreen）等船公司保持长期合作。在美国，长期合作的代理负责清关、卡车运输和 DAP / DDP 派送。从工厂到收货地址，您只需对接我们一个团队。",
     "about.p3":"我们坚持诚信、专业、快速响应：报价清楚，进度及时通报，有问题随时有人回复。",
     "about.f1.t":"办公地点", "about.f1.d":"中国浙江宁波",
     "about.f2.t":"成立时间", "about.f2.d":"2021 年 · 团队深耕中美航线 20 年",
-    "about.f3.t":"资质", "about.f3.d":"NVOCC 无船承运人 · FMC 备案",
+    "about.f3.t":"资质", "about.f3.d":"NVOCC 无船承运人（交通运输部批准）· FMC 备案",
+    "about.f6.t":"合作船公司", "about.f6.d":"达飞 CMA CGM、中远海运 COSCO、长荣 Evergreen 等",
     "about.f4.t":"起运地", "about.f4.d":"中国：宁波、上海、深圳、青岛 · 东南亚：越南、泰国、马来西亚、柬埔寨",
     "about.f5.t":"目的地", "about.f5.d":"美国：美西、美东及内陆点",
     "svc.eyebrow":"我们的业务", "svc.title":"中国至美国物流服务", "svc.desc":"从中国或东南亚工厂到美国收货地址，每个环节由同一个团队负责到底。",
@@ -744,12 +748,15 @@ document.addEventListener('DOMContentLoaded', function(){
   });
   toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
 
-  /* Contact form (mailto: opens the visitor's email client, prefilled to us) */
+  /* Contact form: Web3Forms first, mailto fallback */
   const COMPANY_EMAIL = 'forrest.zhang@enochlogistics.com';
+  const WEB3FORMS_KEY = ''; // paste the access key from web3forms.com here
   const form = document.getElementById('quoteForm');
   const status = document.getElementById('formStatus');
-  form.addEventListener('submit', function(e){
+  const btn = form.querySelector('button[type=submit]');
+  form.addEventListener('submit', async function(e){
     e.preventDefault();
+    if (form.elements.botcheck && form.elements.botcheck.checked) return;
     const lang = document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
     const g = n => (form.elements[n] ? form.elements[n].value.trim() : '');
     const name=g('name'), company=g('company'), email=g('email'), phone=g('phone'), service=g('service'), message=g('message');
@@ -772,14 +779,45 @@ document.addEventListener('DOMContentLoaded', function(){
       '— ' + L.from
     ].join('\n');
 
-    window.location.href = 'mailto:' + COMPANY_EMAIL
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body=' + encodeURIComponent(body);
+    const openMail = () => {
+      window.location.href = 'mailto:' + COMPANY_EMAIL
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
+      status.className = 'form-status ok';
+      status.textContent = (lang==='zh')
+        ? '✅ 正在打开您的邮箱应用，请点击发送即可将询价发给我们。若未弹出，请直接邮件至 ' + COMPANY_EMAIL
+        : '✅ Opening your email app. Just hit send to reach us. If nothing opens, email us directly at ' + COMPANY_EMAIL;
+    };
 
+    if (!WEB3FORMS_KEY) { openMail(); return; }
+
+    btn.disabled = true;
     status.className = 'form-status ok';
-    status.textContent = (lang==='zh')
-      ? '✅ 正在打开您的邮箱应用，请点击发送即可将询价发给我们。若未弹出，请直接邮件至 ' + COMPANY_EMAIL
-      : '✅ Opening your email app — just hit send to reach us. If nothing opens, email us directly at ' + COMPANY_EMAIL;
+    status.textContent = (lang==='zh') ? '正在发送…' : 'Sending…';
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json', 'Accept':'application/json'},
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: subject,
+          from_name: 'Enoch Website',
+          replyto: email,
+          name, company, email, phone, service, message
+        })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) throw new Error(data.message || res.status);
+      form.reset();
+      status.className = 'form-status ok';
+      status.textContent = (lang==='zh')
+        ? '✅ 已收到您的询价，我们会在 1 个工作日内回复。'
+        : '✅ Thanks! Your request has been sent. We will reply within 1 business day.';
+    } catch (err) {
+      openMail();
+    } finally {
+      btn.disabled = false;
+    }
   });
 });
 </script>

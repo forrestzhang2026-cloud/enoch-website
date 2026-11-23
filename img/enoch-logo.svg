@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 54" role="img" aria-labelledby="title">
   <title id="title">Enoch Global Forwarding</title>
   <svg x="1" y="1" width="51" height="51" viewBox="12 12 438 432" aria-hidden="true">
-    <g fill="#00A3E0">
+    <g fill="#387C78">
       <path d="M19 228l39-35v7l-9 9v38l9 9v8Zm13 0 11 12v-24Z" fill-rule="evenodd"/>
-      <path d="m148 98-68 68v15H65v94h15v15l68 68v-83h10v-94h-10Z"/>
-      <path d="m231 16 127 127H231v39h131v92H231v39h127L231 440l-63-63V79Z"/>
-      <path fill-rule="evenodd" d="m371 156 15 15v13h14l44 44-44 44h-14v13l-15 15Zm25 46a26 26 0 1 0 0 52 26 26 0 0 0 0-52Z"/>
+      <path d="m153 98-73 68v15H65v94h15v15l73 68v-83h6v-94h-6Z"/>
+      <path fill="#12304B" d="m231 16 127 127H231v39h131v92H231v39h127L231 440l-63-63V79Z"/>
+      <path fill-rule="evenodd" d="m371 156 15 15v13h14l44 44-44 44h-14v13l-15 15Zm30 47a25 25 0 1 0 0 50 25 25 0 0 0 0-50Z"/>
     </g>
   </svg>
-  <g fill="#101820">
+  <g fill="#12304B" transform="translate(-2 -0.5)">
     <path d="M62 17h19v4H67v4h12v4H67v5h14v4H62Z"/>
     <path d="M86 17h4.5L103 30V17h4.5v21H103L90.5 25v13H86Z"/>
     <path fill-rule="evenodd" d="M123 16.5c6.7 0 11.4 4.7 11.4 11s-4.7 11-11.4 11-11.4-4.7-11.4-11 4.7-11 11.4-11Zm0 4.3a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4Z"/>

@@ -2,17 +2,17 @@
   <title id="title">Enoch Global Forwarding</title>
   <defs>
     <linearGradient id="enoch-blue" gradientUnits="userSpaceOnUse" x1="18" y1="0" x2="444" y2="0">
-      <stop offset="0" stop-color="#585368"/>
-      <stop offset=".25" stop-color="#446987"/>
-      <stop offset=".53" stop-color="#3286AE"/>
-      <stop offset=".79" stop-color="#239FCB"/>
-      <stop offset="1" stop-color="#3BAEC8"/>
+      <stop offset="0" stop-color="#004D81"/>
+      <stop offset="0.125" stop-color="#00588A"/>
+      <stop offset="0.25" stop-color="#005F95"/>
+      <stop offset="0.375" stop-color="#00689D"/>
+      <stop offset="0.5" stop-color="#0170A7"/>
+      <stop offset="0.625" stop-color="#017AB1"/>
+      <stop offset="0.75" stop-color="#0082BC"/>
+      <stop offset="0.875" stop-color="#008CC7"/>
+      <stop offset="1" stop-color="#0097D0"/>
     </linearGradient>
-    <linearGradient id="enoch-word" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="200" y2="0">
-      <stop offset="0" stop-color="#585368"/>
-      <stop offset=".49" stop-color="#3286AE"/>
-      <stop offset="1" stop-color="#20B5DC"/>
-    </linearGradient>
+    <linearGradient id="enoch-word" href="#enoch-blue" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="197" y2="0"/>
   </defs>
   <svg x="49" y="1" width="102" height="102" viewBox="12 12 438 432" aria-hidden="true">
     <g fill="url(#enoch-blue)">
